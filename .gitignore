@@ -1,0 +1,9 @@
+.ipynb_checkpoints/
+anaconda_projects/
+__pycache__/
+*.pyc
+.venv/
+venv/
+reproduced.ipynb
+.DS_Store
+Thumbs.db

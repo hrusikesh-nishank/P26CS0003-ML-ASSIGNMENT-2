@@ -1,0 +1,2 @@
+max_depth,min_samples_leaf,train_accuracy,validation_accuracy,test_accuracy,number_of_leaves,mean_samples_per_leaf,single_sample_leaf_fraction
+,1,1.0,0.575,0.6875,46,5.217391304347826,0.13043478260869565

@@ -1,0 +1,5 @@
+test_index,case_type,true_class,tree_prediction,bagging_prediction,winning_votes,true_class_votes
+2,Bagging corrects tree,1,16,1,56,56
+6,Bagging corrects tree,3,20,3,43,43
+0,Both wrong,0,26,26,58,43
+5,Both wrong,2,20,20,31,17

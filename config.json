@@ -1,0 +1,53 @@
+{
+  "dataset": {
+    "name": "fetch_olivetti_faces",
+    "identities": 40,
+    "images_per_identity": 10,
+    "image_shape": [64, 64],
+    "features": "raw_flattened_pixels",
+    "feature_dimension": 4096
+  },
+
+  "seed": 260003,
+
+  "split": {
+    "train_per_identity": 6,
+    "validation_per_identity": 2,
+    "test_per_identity": 2,
+    "saved_split": "data/olivetti_split_seed260003.npz"
+  },
+
+  "masked_test": {
+    "rows": [24, 39],
+    "columns": [24, 39],
+    "fill_value": 0
+  },
+
+  "single_tree": {
+    "max_depth_search": [2, 4, 8, 16, null],
+    "min_samples_leaf_search": [1, 2, 4],
+    "selected_max_depth": null,
+    "effective_depth": 38,
+    "selected_min_samples_leaf": 1
+  },
+
+  "bagging": {
+    "ensemble_sizes": [1, 5, 10, 25, 50, 100, 200],
+    "selected_ensemble_size": 200,
+    "bootstrap_sample_size": 240
+  },
+
+  "boosting": {
+    "method": "SAMME",
+    "depth_search": [1, 2, 3, 4],
+    "round_search": [10, 25, 50, 100],
+    "selected_depth": 4,
+    "selected_rounds": 100
+  },
+
+  "bias_variance": {
+    "number_of_refits": 30,
+    "depth_experiment": [2, 38, 46],
+    "bagging_trees_per_depth": 100
+  }
+}
